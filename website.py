@@ -4,19 +4,19 @@ website = Flask(__name__)
 
 @website.route('/')
 def Landing():
-    return render_template('LandingPage.html')
+    return render_template('index.html')
 
-@website.route('/About')
+@website.route('/about')
 def Home():
-    return render_template('About.html')
+    return render_template('about.html')
 
-@website.route('/Resume')
+@website.route('/resume')
 def Contact():
-    return render_template('Resume.html')
+    return render_template('resume.html')
 
-@website.route('/Projects')
+@website.route('/projects')
 def Projects():
-    return render_template('Projects.html')
+    return render_template('projects.html')
 
 if __name__ == '__main__':
     website.run(debug=True)
