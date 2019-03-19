@@ -1,0 +1,67 @@
+.resume{
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 8%;
+  background-color: #f2f6f9;
+}
+
+#myResume:hover{
+  cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+.modal_container{
+  display: none;
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(0,0,0,0.7);
+  height:100%;
+  width:100%;
+  top:0;
+  left: 0;
+  overflow:auto;
+
+}
+
+.modal_container div{
+  position: absolute;
+  min-width: 850px;
+  display: flex;
+  justify-content: center;
+  min-height: 1100px;
+}
+
+
+#close{
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+  font-family: Arial;
+}
+
+#close:hover,
+#close:focus,
+#download:hover{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#download{
+  top:20px;
+  left: 50px;
+  color:#f1f1f1;
+  transition: 0.3s;
+  max-width: 55px;
+  max-height: 55px;
+  position:absolute;
+  background-color: #f2f6f9;
+}

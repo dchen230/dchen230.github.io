@@ -1,0 +1,49 @@
+{% extends 'mastertemplate.html' %}
+
+{% block head %}
+  <title>About Me</title>
+  <link type="text/css" rel="stylesheet" href= "{{ url_for('static',filename='styles/about.css') }}">
+{% endblock %}
+
+{% block heading %}
+  About Me
+{% endblock %}
+
+{% block body %}
+
+  <div class="profile" style="background-image: url({{ url_for('static', filename='photos/profilepic.jpg') }});">
+  </div>
+
+  <p class="introduction">Hello! Welcome to my website!
+    My name is David Chen. I am 24 and currently a senior Computer Science student
+    at CUNY John Jay. I have always been fascinated by technology and
+    how everything just worked. I was constantly amazed at the things people were
+    able to create. Initially, I had trouble picking out a hobby project for myself
+    because I did not know what I wanted to build. I knew I wanted to make something
+    tangible, something I can see and interact with. So, I decided to create
+    a personal page for myself!
+    I hope you enjoy your visit.
+  </p>
+
+  <ul class="hobby">
+    <u>HOBBIES/ACTIVITIES</u>
+    <li>Programming</li>
+    <li>Exercising</li>
+    <li>Rockclimbing/Hiking</li>
+    <li>Video Games</li>
+    <li>Film</li>
+    <li>Volunteering for Children Ministry</li>
+  </ul>
+
+  <div>
+
+  </div>
+
+{% endblock %}
+
+{% block modals %}
+{% endblock %}
+
+{% block scripts %}
+  <script src = "{{ url_for('static', filename='javascript/home.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mastertemp.css') }}">
+    {% block head %}
+    {% endblock %}
+  </head>
+  <body>
+    <div class="bgpic" style="background-image: url({{ url_for('static', filename='photos/topbanner.jpg') }});">
+
+      <div class="header">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="About">About Me</a></li>
+          <li><a href="Projects">Projects</a></li>
+          <li><a href="Resume">Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="body">
+
+        <div class="heading">
+          <h1>{% block heading %} {% endblock %}</h1>
+        </div>
+
+        <div class="bodycontent">
+          {% block body %}{% endblock %}
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modals">
+      {% block modals %}{% endblock %}
+    </div>
+
+    {% block scripts %}{% endblock %}
+
+  </body>
+</html>

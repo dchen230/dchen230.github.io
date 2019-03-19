@@ -1,0 +1,35 @@
+{% extends 'mastertemplate.html' %}
+
+{% block head %}
+  <title>Resume</title>
+  <link type="text/css" rel="stylesheet" href= "{{ url_for('static',filename='styles/resume.css') }}">
+{% endblock %}
+
+{% block heading %}
+  Resume
+{% endblock %}
+
+{% block body %}
+  <div class="resume">
+    <img src="/static/photos/David Chen Resume.png" alt="Resume" id="myResume">
+  </div>
+
+{% endblock %}
+
+{% block modals %}
+
+  <div class="modal_container">
+    <span id="close">x</span>
+    <span id="download">
+        <img src="/static/photos/download-logo.png" id="download">
+    </span>
+    <div>
+      <img src="/static/photos/David Chen Resume.png" id="modal_resume">
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static',filename='javascript/resume.js') }}"></script>
+{% endblock %}

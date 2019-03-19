@@ -1,0 +1,34 @@
+.profile {
+  height:300px;
+  width:300px;
+  border-radius: 50% 50% 50% 50%;
+  position:relative;
+  margin-top: 20px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -100px;
+  float:left;
+  display: block;
+  margin-right: 40px;
+  border:4px #193149 solid;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+  margin-bottom: 40px;
+}
+
+.introduction{
+  font-size: 28px;
+  margin-top: 40px;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-left: 10px;
+  line-height: 1.6;
+}
+
+.hobby{
+  font-size: 28px;
+  left:0;
+  margin-left: 6%;
+  margin-top: 10%;
+}

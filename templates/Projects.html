@@ -1,0 +1,42 @@
+{% extends 'mastertemplate.html' %}
+
+{% block head %}
+  <title>My Portfolio</title>
+  <link type="text/css" rel="stylesheet" href= "{{ url_for('static',filename='styles/projects.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+{% endblock %}
+
+{% block heading %}
+  My Portfolio
+{% endblock %}
+
+{% block body %}
+
+  <div class="RPS">
+    <h1>Rock, Paper, Scissors!</h1>
+    <div id="scoreboardcontainer">
+      <div id ="scoreboard">
+        <span id="myScore">0</span>
+        <span>:</span>
+        <span id="compScore">0</span>
+      </div>
+    </div>
+
+    <div class="message"><p id="enlarge"></p></div>
+
+    <div class="choices">
+      <button id="rock" style="background-image: url({{ url_for('static', filename='photos/rock.png') }});"></button>
+      <button id="paper" style="background-image: url({{ url_for('static', filename='photos/paper.png') }});"></button>
+      <button id="scissor" style="background-image: url({{ url_for('static', filename='photos/scissor.png') }});"></button>
+  </div>
+
+  <p class="summary">Technologies Used: HTML, CSS, Javascript</p>
+
+{% endblock %}
+
+{% block modals %}
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static',filename='javascript/rps.js') }}"></script>
+{% endblock %}
