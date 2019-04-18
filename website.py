@@ -1,8 +1,6 @@
-import os
 from flask import Flask, render_template
 
 website = Flask(__name__)
-myport = int(os.environ.get('PORT', 5000))
 
 @website.route('/')
 def Landing():
