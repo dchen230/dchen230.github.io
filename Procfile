@@ -1,1 +1,1 @@
-web: gunicorn manage:website.py
+web: gunicorn website:app
