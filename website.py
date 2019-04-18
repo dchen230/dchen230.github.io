@@ -21,4 +21,4 @@ def Resume():
     return render_template('projects.html')
 
 if __name__ == '__main__':
-    website.run(port=myport)
+    website.run()
