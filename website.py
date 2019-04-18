@@ -1,6 +1,8 @@
+import os
 from flask import Flask, render_template
 
 website = Flask(__name__)
+myport = int(os.environ.get('PORT', 5000))
 
 @website.route('/')
 def Landing():
@@ -15,8 +17,8 @@ def Contact():
     return render_template('resume.html')
 
 @website.route('/projects')
-def Projects():
+def Resume():
     return render_template('projects.html')
 
 if __name__ == '__main__':
-    website.run(debug=True)
+    website.run(port=myport)
